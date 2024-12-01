@@ -465,6 +465,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .features-descr {
@@ -478,14 +479,18 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {
 
     .features-list {
-            gap: 24px;
+            row-gap: 72px;
+            column-gap: 24px;
             align-items: center;
             justify-content: center;
         }
 
+                .features-subtittle{
+                    text-align: start;
+                }
+
     .features-item {
             width: calc((100% - 24px) / 2);
-            margin-bottom: 72px;
         }
               
 }
@@ -773,6 +778,13 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #f4f4fd;
 }
 
+.footer-logo-cont {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 72px;
+}
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -784,13 +796,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 288px;
-    margin-bottom: 72px;
+    
 }
 
 .footer-social-cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .social-subtittle {
@@ -810,7 +823,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-item {
     width: 40px;
     height: 40px;
-    margin-bottom: 72px; /* лише моб!!! */
 }
 
 .footer-item-link {
@@ -916,6 +928,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer-logo-cont {
         margin-right: 24px;
+        display: block;
     }
 
         .footer-text {
@@ -925,6 +938,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
          .footer-social-cont{
 display: block;
+margin-bottom: 0;
          }
 
         .footer-subscribe-cont {
@@ -946,6 +960,7 @@ display: block;
 
         .footer-logo-cont {
             margin-right: 120px;
+            margin-bottom: 0;
         }
 
 .footer-text {
